@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="challenge.css">
 </head>
 <body>
-    <section class="text">
+    <section class="content">
         <div id="weather">
           <span></span>
           <span></span>
@@ -16,17 +16,22 @@
         <div>
           <h2 id="clock" class="timer">00:00:00</h2>
         </div>
-        <div id="quote">
-            <span>고민보다 GO</span>
-            <span>BTS</span>
-          </div>
-        
+
         <form class="hidden" id="login-form">
           <input required maxlength="15" type="text" placeholder="What is your name?"/>
           <input type="submit" value="Log In"/>
         </form>
         <h1 class="hidden" id="greeting"></h1>
-      
+        <form id="todo-form">
+            <input type="text" placeholder="오늘할일"  required />
+          </form>
+          <ul id="todo-list">
+          </ul>
+        
+        <div id="quote">
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </section>
       <script src="login.js"></script>
@@ -34,5 +39,7 @@
       <script src="clock.js"></script>
       <script src="weather.js"></script>
       <script src="quotes.js"></script>
+      <script src="todo.js"></script>
+
 </body>
 </html>
